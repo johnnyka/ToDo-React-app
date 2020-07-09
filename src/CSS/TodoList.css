@@ -1,0 +1,34 @@
+.todo__status {
+  text-align: left;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid whitesmoke;
+  border-top: 1px solid whitesmoke;
+  font-weight: 700;
+}
+
+.todo__tasks {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+}
+
+.status__dones {
+  padding-left: 1rem;
+}
+
+.tasks__separator {
+  order: 2;
+}
+
+@media only screen and (max-width: 375px) {
+  .todo__status {
+    padding: 0.5rem 1.5rem;
+  }
+  .todo__tasks {
+    padding: 0.8rem 1.5rem;
+  }
+  .tasks__separator {
+    line-height: 4rem;
+  }
+}

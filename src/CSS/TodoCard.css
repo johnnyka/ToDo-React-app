@@ -1,0 +1,45 @@
+.tasks__item {
+  text-align: left;
+  width: 100%;
+  padding: 1rem;
+  margin: 0.2rem 0;
+  overflow-wrap: break-word;
+}
+
+.tasks__item.active {
+  order: 3;
+  background-color: whitesmoke;
+}
+
+.tasks__item.active:hover {
+  background-color: rgb(221, 221, 221);
+}
+
+.tasks__item.done {
+  text-decoration: line-through;
+  font-style: italic;
+  order: 1;
+  background-color: rgba(124, 124, 124, 0.644);
+}
+
+.tasks__item.done:hover {
+  background-color: rgba(168, 168, 168, 0.644);
+}
+
+.tasks__trashcan {
+  float: right;
+}
+
+.tasks__trashcan:hover {
+  color: rgb(214, 0, 0);
+}
+
+.tasks__item.active > .tasks__trashcan {
+  display: none;
+}
+
+@media only screen and (max-width: 375px) {
+  .tasks__item {
+    padding: 0.5rem 1rem;
+  }
+}

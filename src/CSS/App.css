@@ -1,0 +1,41 @@
+.app {
+  text-align: center;
+}
+
+.app__title {
+  background-color: rgb(72, 72, 187);
+  color: whitesmoke;
+  padding: 1.5rem 0;
+}
+
+.app__todo {
+  background-color: rgba(245, 245, 245, 0.438);
+  box-shadow: 5px 5px 10px rgb(58, 58, 58);
+  margin: 2rem auto;
+  max-width: 40vw;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1600px) {
+  .app__todo {
+    max-width: 50vw;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .app__todo {
+    max-width: 70vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .app__todo {
+    max-width: 85vw;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .app__title {
+    padding: 0.5rem 0;
+  }
+}
